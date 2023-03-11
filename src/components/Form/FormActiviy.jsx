@@ -22,11 +22,23 @@ const FormActivity = ({ params }) => {
 
   const submitHandler = async function submitHandler(e) {
     e.preventDefault();
+  
+    if (
+      !action.name ||
+      !action.duration ||
+      !action.difficulty ||
+      !action.season
+    ) {
+      alert("Por favor completa todos los campos.");
+      return;
+    }
+  
     console.log(action);
     await apiPostAction(action);
-    alert('The activity has been created successfully');
+    alert("La actividad ha sido creada exitosamente");
     window.location.reload();
   };
+  
 
   return (
     <div className={styles.container}>
