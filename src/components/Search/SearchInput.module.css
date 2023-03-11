@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+  }
+  
+  
+  .iconWrapper {
+    margin-right: 0.5rem;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
